@@ -1,0 +1,35 @@
+{
+  "name": "html-to-plaintext",
+  "version": "0.1.0",
+  "description": "Converts a block of HTML to plain text, correctly preserving newlines in tricky situations.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "mocha --compilers js:babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dustinsoftware/html-to-plaintext.git"
+  },
+  "keywords": [
+    "convert",
+    "html",
+    "to",
+    "plaintext",
+    "innertext"
+  ],
+  "author": "Dustin Masters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dustinsoftware/html-to-plaintext/issues"
+  },
+  "homepage": "https://github.com/dustinsoftware/html-to-plaintext",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "jsdom": "^9.4.1",
+    "mocha": "^3.0.0"
+  }
+}
