@@ -2,7 +2,7 @@
   "name": "html-to-plaintext",
   "version": "0.1.0",
   "description": "Converts a block of HTML to plain text, correctly preserving newlines in tricky situations.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "compile": "babel -d lib/ src/",
     "prepublish": "npm run compile",
