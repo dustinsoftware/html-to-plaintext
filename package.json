@@ -1,6 +1,6 @@
 {
   "name": "html-to-plaintext",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Converts a block of HTML to plain text, correctly preserving newlines in tricky situations.",
   "main": "lib/index.js",
   "scripts": {
