@@ -25,7 +25,7 @@ module.exports = function(node) {
         continue;
       }
 
-      if (_inlineTags.has(node.tagName)) {
+      if (_inlineTags.has(node.tagName.toLowerCase())) {
         appendText(node.childNodes);
         continue;
       }

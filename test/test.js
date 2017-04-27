@@ -16,5 +16,6 @@ describe('htmlToPlaintext', () => {
     assert.equal('1\n2', getPlainTextFromHtmlString('<p>1</p>2'));
     assert.equal('1\n2', getPlainTextFromHtmlString('<p>1</p><p>2</p>'));
     assert.equal('\n1\n2', getPlainTextFromHtmlString('<p><br>1</p><p>2</p>'));
-  })
+  });
+  it('should not add newlines for inline tags', () => assert.equal('1 2', getPlainTextFromHtmlString('1 <strong>2</strong>')));
 });
